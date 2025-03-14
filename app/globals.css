@@ -1,21 +1,47 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f7d3;
+  z-index: -100;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom scrollbar styles */
+.scrollbar-custom {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #007 #bada55; /* Firefox */
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #bada55;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #007;
+  border-radius: 4px;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.zoom-in-out {
+  animation: zoomInOut 3s ease-in-out infinite;
 }
+
