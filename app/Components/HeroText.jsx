@@ -15,14 +15,10 @@ export default function HeroText() {
                 Providing fresh produce to our community.
             </p>
 
-            <Button
-                className="mt-6 px-8 py-4 text-4xl bg-primary-400 hover:bg-primary-500 hover:shadow-lg animate-fade-in-up"
-                onClick={() => alert("Learn More Clicked!")}
-            >
+            {/* Call to Action */}
+            <Button className="mt-6 px-6 py-3 text-lg font-medium text-white bg-green-600 rounded-2xl transition-all duration-300 hover:bg-green-700" onClick={() => window.location.href = '/About'}>
                 Learn More
             </Button>
-
-
 
             {/* Tailwind Animations */}
             <style jsx>{`

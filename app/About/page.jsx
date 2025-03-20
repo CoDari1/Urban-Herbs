@@ -2,7 +2,9 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <div>Page</div>
+        <div className={'flex'}>
+            <a>https://www.instagram.com/urbn.herb/</a>
+        </div>
     )
 }
 export default Page
