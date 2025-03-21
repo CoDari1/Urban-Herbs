@@ -1,20 +1,4 @@
-// import Navbar from "@/app/Components/Navbar";
-// import FoodCarousel from "@/app/Components/FoodCarousel";
-//
-// export default function Home() {
-//     return (
-//         <div id='Home' className='flex flex-col items-center justify-center min-h-screen py-2 overflow-hidden scrollbar-custom h-[1000vh]'>
-//             <Navbar/>
-//             <div className='w-full h-full'>
-//                 <FoodCarousel images={[
-//                     "/imgs/carousel/Gemini_Generated_Image_uyqhxpuyqhxpuyqh.jpg",
-//                     "/imgs/carousel/Caronchi_Photography_181030_1047.jpg"
-//                 ]}
-//                 />
-//             </div>
-//         </div>
-//     )
-// }
+
 
 
 import Navbar from "@/app/Components/Navbar";
