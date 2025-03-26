@@ -1,9 +1,11 @@
 "use client";
 
+
 import React, { useRef } from "react";
 import HeroText from "@/app/Components/HeroText";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+
 
 export default function FoodCarousel({ images }) {
     // Initialize Embla with autoplay plugin and delay of 3000ms
@@ -11,6 +13,7 @@ export default function FoodCarousel({ images }) {
         Autoplay({ delay: 3000, stopOnInteraction: false })
     );
     const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplayPlugin.current]);
+
 
     return (
         <div className="relative w-screen h-screen overflow-hidden">
@@ -29,6 +32,7 @@ export default function FoodCarousel({ images }) {
                     ))}
                 </div>
             </div>
+
 
             {/* Overlay Text */}
             <HeroText />
