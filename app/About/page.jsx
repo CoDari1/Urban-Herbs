@@ -100,9 +100,3 @@ const About = () => {
 };
 
 export default About;
-
-
-
-if (window.innerWidth > 150 && window.innerWidth <210) {
-
-}
