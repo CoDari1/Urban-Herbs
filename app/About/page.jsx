@@ -87,7 +87,7 @@ const About = () => {
             {/* Footer Section */}
             <footer className="bg-primary-500 text-white py-8">
                 <div className="container mx-auto text-center px-6">
-                    <p className="text-sm text-text-900">&copy; 2025 Urbn Herb. All rights reserved.</p>
+                    <p className="text-sm text-text-900">&copy; 2025 Urbn Herb. All rights reserved. yay</p>
                     <div className="mt-4">
                         <a href="https://www.instagram.com/urbnherb" className="text-text-900 hover:text-white mx-4">Instagram</a>
                         <a href="https://www.facebook.com/urbnherb" className="text-text-900 hover:text-white mx-4">Facebook</a>
