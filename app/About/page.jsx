@@ -21,29 +21,31 @@ const About = () => {
             </div>
 
             {/* Card Layout */}
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
-                {/* Mission Card */}
-                <div className="bg-secondary-50 p-8 rounded-lg shadow-xl">
-                    <h2 className="text-2xl font-semibold text-primary-500 mb-4">Our Mission</h2>
-                    <p className="text-text-600 text-lg">
-                        We believe in a sustainable food system that prioritizes fresh, seasonal, and local ingredients. Our goal is to empower communities through healthy eating while reducing the carbon footprint of food production. Every meal we serve is a step towards a greener future.
-                    </p>
-                </div>
+            <div className="container mx-auto flex flex-col items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+                    {/* Mission Card */}
+                    <div className="bg-secondary-50 p-8 rounded-lg shadow-xl">
+                        <h2 className="text-2xl font-semibold text-primary-500 mb-4">Our Mission</h2>
+                        <p className="text-text-600 text-lg">
+                            We believe in a sustainable food system that prioritizes fresh, seasonal, and local ingredients. Our goal is to empower communities through healthy eating while reducing the carbon footprint of food production. Every meal we serve is a step towards a greener future.
+                        </p>
+                    </div>
 
-                {/* Sustainability Card */}
-                <div className="bg-secondary-50 p-8 rounded-lg shadow-xl">
-                    <h2 className="text-2xl font-semibold text-primary-500 mb-4">Sustainability at Our Core</h2>
-                    <p className="text-text-600 text-lg">
-                        We are committed to sustainable practices, from the way we source our ingredients to how we package and deliver our meals. By supporting local farmers and using eco-friendly packaging, we ensure that every step of our process has a minimal impact on the environment.
-                    </p>
-                </div>
+                    {/* Sustainability Card */}
+                    <div className="bg-secondary-50 p-8 rounded-lg shadow-xl">
+                        <h2 className="text-2xl font-semibold text-primary-500 mb-4">Sustainability at Our Core</h2>
+                        <p className="text-text-600 text-lg">
+                            We are committed to sustainable practices, from the way we source our ingredients to how we package and deliver our meals. By supporting local farmers and using eco-friendly packaging, we ensure that every step of our process has a minimal impact on the environment.
+                        </p>
+                    </div>
 
-                {/* Team Card */}
-                <div className="bg-secondary-50 p-8 rounded-lg shadow-xl">
-                    <h2 className="text-2xl font-semibold text-primary-500 mb-4">Meet the Team</h2>
-                    <p className="text-text-600 text-lg">
-                        Our team is made up of passionate individuals who are dedicated to making a difference in the food industry. From chefs to farmers, we are united by our love for fresh, local, and sustainable ingredients.
-                    </p>
+                    {/* Team Card */}
+                    <div className="bg-secondary-50 p-8 rounded-lg shadow-xl md:col-span-2 lg:col-span-1">
+                        <h2 className="text-2xl font-semibold text-primary-500 mb-4">Meet the Team</h2>
+                        <p className="text-text-600 text-lg">
+                            Our team is made up of passionate individuals who are dedicated to making a difference in the food industry. From chefs to farmers, we are united by our love for fresh, local, and sustainable ingredients.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -98,3 +100,9 @@ const About = () => {
 };
 
 export default About;
+
+
+
+if (window.innerWidth > 150 && window.innerWidth <210) {
+
+}
