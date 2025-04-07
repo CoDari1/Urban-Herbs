@@ -16,7 +16,7 @@ const Page = () => {
             {/* Card Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 p-6">
                 {/* Loop to reduce redundancy */}
-                {[...Array(10)].map((_, index) => (
+                {[...Array(8)].map((_, index) => (
                     <Card key={index} className="bg-primary-600 shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out">
                         <CardHeader className="p-4 bg-primary-700 rounded-t-xl">
                             <CardTitle className="text-xl font-semibold text-white">Dish {index + 1}</CardTitle>

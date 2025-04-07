@@ -63,15 +63,12 @@ const Home = () => {
             {/* Main Content */}
             <div className="w-full flex flex-col items-center justify-center space-y-10 py-10">
                 {/* Welcome Section */}
-                <section className="w-[98%] h-[75vh] max-w-7xl text-center flex flex-col justify-center items-center px-4 bg-green-600 text-white rounded-xl shadow-lg">
-                    <h2 className="text-5xl font-bold">Welcome to Urban Herb</h2>
-                    <p className="mt-6 text-xl max-w-3xl">
-                        At Urban Herb, we bring fresh, locally grown produce straight to your table.
-                        Our commitment to quality and sustainability ensures you get the best ingredients
-                        to nourish your body and support a healthier planet.
+                <section className="w-[98%] h-[30vh] max-w-7xl text-center flex flex-col items-center px-4 bg-green-600 text-white rounded-xl shadow-lg">
+                    <h2 className="text-5xl font-bold mt-6">Welcome to Urban Herb</h2>
+                    <p className="text-xl max-w-3xl mt-16">
+                        At Urban Herb, we bring fresh, locally grown produce straight to your table. Our commitment to quality and sustainability ensures you get the best ingredients to nourish your body and support a healthier planet.
                     </p>
                 </section>
-
                 {/* Mission Section */}
                 <section className="w-[98%] h-[75vh] max-w-7xl text-center flex flex-col justify-center items-center px-4 bg-green-400 text-gray-900 rounded-xl shadow-lg">
                     <h2 className="text-5xl font-bold">Our Mission</h2>

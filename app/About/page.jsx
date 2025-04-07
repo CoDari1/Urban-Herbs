@@ -14,17 +14,17 @@ const About = () => {
                 </p>
                 <div className="flex justify-center gap-4">
 
-                    <a href="#contact" className="bg-secondary-500 text-white py-2 px-6 rounded-md shadow-md hover:bg-secondary-400">
+                    <a href="#contact" className="bg-secondary-500 text-white py-2 px-6 rounded-2xl shadow-md hover:bg-secondary-400">
                         Contact Us
                     </a>
                 </div>
             </div>
 
-            {/* Card Layout */}
+            {/* Info Cards Section */}
             <div className="container mx-auto flex flex-col items-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
                     {/* Mission Card */}
-                    <div className="bg-secondary-50 p-8 rounded-lg shadow-xl">
+                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl">
                         <h2 className="text-2xl font-semibold text-primary-500 mb-4">Our Mission</h2>
                         <p className="text-text-600 text-lg">
                             We believe in a sustainable food system that prioritizes fresh, seasonal, and local ingredients. Our goal is to empower communities through healthy eating while reducing the carbon footprint of food production. Every meal we serve is a step towards a greener future.
@@ -32,7 +32,7 @@ const About = () => {
                     </div>
 
                     {/* Sustainability Card */}
-                    <div className="bg-secondary-50 p-8 rounded-lg shadow-xl">
+                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl">
                         <h2 className="text-2xl font-semibold text-primary-500 mb-4">Sustainability at Our Core</h2>
                         <p className="text-text-600 text-lg">
                             We are committed to sustainable practices, from the way we source our ingredients to how we package and deliver our meals. By supporting local farmers and using eco-friendly packaging, we ensure that every step of our process has a minimal impact on the environment.
@@ -40,7 +40,7 @@ const About = () => {
                     </div>
 
                     {/* Team Card */}
-                    <div className="bg-secondary-50 p-8 rounded-lg shadow-xl md:col-span-2 lg:col-span-1">
+                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl md:col-span-2 lg:col-span-1">
                         <h2 className="text-2xl font-semibold text-primary-500 mb-4">Meet the Team</h2>
                         <p className="text-text-600 text-lg">
                             Our team is made up of passionate individuals who are dedicated to making a difference in the food industry. From chefs to farmers, we are united by our love for fresh, local, and sustainable ingredients.
@@ -49,36 +49,41 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Team Member Cards */}
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 my-16">
-                {/* Alice Card */}
-                <div className="bg-secondary-200 p-6 rounded-lg shadow-xl">
-                    <img src="/team-member-1.jpg" alt="Alice Johnson" className="w-full h-40 object-cover rounded-t-lg mb-4" />
-                    <h3 className="text-xl font-semibold text-text-900">Alice Johnson</h3>
-                    <p className="text-text-500">Head Chef</p>
-                </div>
-                {/* Bob Card */}
-                <div className="bg-secondary-200 p-6 rounded-lg shadow-xl">
-                    <img src="/team-member-2.jpg" alt="Bob Smith" className="w-full h-40 object-cover rounded-t-lg mb-4" />
-                    <h3 className="text-xl font-semibold text-text-900">Bob Smith</h3>
-                    <p className="text-text-500">Farm Manager</p>
-                </div>
-                {/* Carla Card */}
-                <div className="bg-secondary-200 p-6 rounded-lg shadow-xl">
-                    <img src="/team-member-3.jpg" alt="Carla Lee" className="w-full h-40 object-cover rounded-t-lg mb-4" />
-                    <h3 className="text-xl font-semibold text-text-900">Carla Lee</h3>
-                    <p className="text-text-500">Sustainability Coordinator</p>
+            {/* Team Members Section */}
+            <div className="container mx-auto flex flex-col items-center my-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+                    {/* Alice Card */}
+                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl">
+                        <img src="/team-member-1.jpg" alt="Portrait of Alice Johnson, Head Chef" className="w-full h-40 object-cover rounded-t-lg mb-4" />
+                        <h3 className="text-2xl font-semibold text-primary-500 mb-4">Alice Johnson</h3>
+                        <p className="text-text-600 text-lg">Head Chef</p>
+                    </div>
+
+                    {/* Bob Card */}
+                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl">
+                        <img src="/team-member-2.jpg" alt="Portrait of Bob Smith, Farm Manager" className="w-full h-40 object-cover rounded-t-lg mb-4" />
+                        <h3 className="text-2xl font-semibold text-primary-500 mb-4">Bob Smith</h3>
+                        <p className="text-text-600 text-lg">Farm Manager</p>
+                    </div>
+
+                    {/* Carla Card */}
+                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl md:col-span-2 lg:col-span-1">
+                        <img src="/team-member-3.jpg" alt="Portrait of Carla Lee, Sustainability Coordinator" className="w-full h-40 object-cover rounded-t-lg mb-4" />
+                        <h3 className="text-2xl font-semibold text-primary-500 mb-4">Carla Lee</h3>
+                        <p className="text-text-600 text-lg">Sustainability Coordinator</p>
+                    </div>
                 </div>
             </div>
 
+
             {/* Contact Card */}
             <div id="contact" className="container mx-auto px-6 py-16">
-                <div className="bg-primary-100 p-8 rounded-lg shadow-xl text-center">
+                <div className="bg-primary-100 p-8 rounded-2xl shadow-xl text-center">
                     <h2 className="text-2xl font-semibold text-primary-500 mb-4">Get In Touch</h2>
                     <p className="text-text-600 text-lg mb-8">
                         Have any questions or want to collaborate? We’d love to hear from you. Reach out to us, and let’s create something delicious together.
                     </p>
-                    <a href="/Contact" className="bg-accent-500 text-white py-2 px-6 rounded-md shadow-md hover:bg-accent-400">
+                    <a href="/Contact" className="bg-accent-500 text-white py-2 px-6 rounded shadow-md hover:bg-accent-400">
                         Email Us
                     </a>
                 </div>
