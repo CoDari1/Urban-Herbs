@@ -6,7 +6,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const dishes = [
     {
         "title": "Garlic Parmesan Breadsticks",
-        "imageUrl": "https://www.number-2-pencil.com/easy-buttery-garlic-parmesan-breadsticks/",
+        "imageUrl": "" +
+            "/imgs/menu/Appetizers/Breadsticks.jpg",
         "options": [
             { "label": "6 Breadsticks", "calories": 266, "price": "$2.99" },
             { "label": "12 Breadsticks", "calories": 536, "price": "$5.99" }
@@ -15,7 +16,7 @@ const dishes = [
     },
     {
         "title": "Ranch Deviled Eggs",
-        "imageUrl": "https://www.food.com/recipe/ranch-deviled-eggs-477999",
+        "imageUrl": "/imgs/menu/Appetizers/DeviledEggs.webp",
         "options": [
             { "label": "6 Deviled eggs", "calories": 204, "price": "$4.99" },
             { "label": "12 Deviled eggs", "calories": 412, "price": "$6.99" }
@@ -24,7 +25,7 @@ const dishes = [
     },
     {
         "title": "Vegan Mozzarella Sticks",
-        "imageUrl": "https://www.theedgyveg.com/2021/10/25/vegan-mozzarella-sticks/",
+        "imageUrl": "/imgs/menu/Appetizers/Cheesesticks.jpg",
         "options": [
             { "label": "6 Mozzarella sticks", "calories": 432, "price": "$7.99" },
             { "label": "12 Mozzarella sticks", "calories": 1046, "price": "$9.99" }
@@ -33,7 +34,7 @@ const dishes = [
     },
     {
         "title": "Smoked Feta Dip",
-        "imageUrl": "https://www.epicurious.com/recipes/food/views/smoked-feta-dip",
+        "imageUrl": "/imgs/menu/Appetizers/SmokedFetaDip.webp",
         "options": [
             { "label": "Family Serving", "calories": 897, "price": "$8.30" },
             { "label": "Individual Serving", "calories": 442, "price": "$6.45" }
@@ -42,7 +43,7 @@ const dishes = [
     },
     {
         "title": "Hurricane Chips",
-        "imageUrl": "https://www.bonappetit.com/recipe/hurricane-chips",
+        "imageUrl": "/imgs/menu/Appetizers/HurricaneChips.webp",
         "options": [
             { "label": "Family Serving", "calories": 437, "price": "$6.30" },
             { "label": "Individual Serving", "calories": 215, "price": "$4.45" }
@@ -51,7 +52,7 @@ const dishes = [
     },
     {
         "title": "Broccoli Cheese Soup",
-        "imageUrl": "https://thecozycook.com/broccoli-cheese-soup/",
+        "imageUrl": "imgs/menu/Side Dishes/BroccoliCheeseSoup.jpg",
         "options": [
             { "label": "Family Serving", "calories": 400, "price": "$2.50" },
             { "label": "Individual Serving", "calories": 290, "price": "$1.25" }
@@ -95,9 +96,10 @@ const dishes = [
         "allergy": "This dish contains corn and dairy"
     }
 ];
-
 const Page = () => {
     return (
+
+        console.log(dishes.imageUrl),
         <div className="flex flex-col items-center">
             {/* Hero Section */}
             <div className="h-[600px] w-full flex rounded-3xl bg-gradient-to-r from-red-500 to-orange-500 mt-[120px] justify-center items-center shadow-xl">
@@ -112,13 +114,18 @@ const Page = () => {
                             <CardTitle className="text-xl font-semibold text-white">{dish.title}</CardTitle>
                             <CardDescription className="text-sm text-white opacity-80">{dish.allergy}</CardDescription>
                         </CardHeader>
-                        <CardContent className="py-6 space-y-4">
-                            {/* Placeholder circle - replace with image if needed */}
-                            <div className="w-28 h-28 bg-blue-600 rounded-full mx-auto"></div>
-                            <div className="text-white text-sm space-y-2">
+                        <CardContent className="py-4 space-y-4 flex flex-col items-center">
+                            <img
+                                src={dish.imageUrl}
+                                alt={dish.title}
+                                className="w-full h-40 object-cover rounded-lg shadow-md"
+                            />
+                            <div className="text-white text-sm space-y-2 w-full text-center">
                                 {dish.options.map((opt, optIndex) => (
                                     <p key={optIndex}>
-                                        {opt.label}: <span className="font-semibold">{opt.calories ? `${opt.calories} kcal` : ''} {opt.price}</span>
+                                        {opt.label}: <span className="font-semibold">
+                                            {opt.calories ? `${opt.calories} kcal` : ''} {opt.price}
+                                        </span>
                                     </p>
                                 ))}
                             </div>
