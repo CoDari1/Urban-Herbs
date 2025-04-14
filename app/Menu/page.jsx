@@ -94,6 +94,16 @@ const dishes = [
             { "label": "Individual Serving", "calories": 150, "price": "$0.50" }
         ],
         "allergy": "This dish contains corn and dairy"
+    },
+    {
+        "title": "Veggie Pizza",
+        "imageUrl": "/imgs/menu/Main dishes/VeggiePizza.jpg",
+        "options": [
+            { "label": "Small", "calories": 960, "price": "13.99" },
+            { "label": "Medium", "calories": 1145, "price": "17.99" },
+            { "label": "Large", "calories": 1380, "price": "20.99" }
+        ],
+        "allergy": "This dish contains gluten and dairy products"
     }
 ];
 const Page = () => {
