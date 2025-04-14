@@ -48,10 +48,10 @@ const About = () => {
                     <h2 className="text-4xl md:text-5xl font-bold">What Our Customers Say</h2>
                     <div className="mt-8 space-y-6">
                         <p className="text-lg md:text-xl max-w-2xl">
-                            “Urban Herb has completely changed the way I cook! Their produce is always fresh, and I love knowing I’m supporting local farmers.” – <span className="font-semibold">Alex R.</span>
+                            “Urban Herb has completely changed the way I cook! Their produce is always fresh, and I love knowing I’m supporting local farmers.” – <span className="font-semibold">A. R.</span>
                         </p>
                         <p className="text-lg md:text-xl max-w-2xl">
-                            “I never knew organic food could taste this good. The basil and mint are my absolute favorites!” – <span className="font-semibold">Samantha L.</span>
+                            “I never knew organic food could taste this good. The basil and mint are my absolute favorites!” – <span className="font-semibold">S. L.</span>
                         </p>
                     </div>
                 </section>
@@ -76,7 +76,6 @@ const About = () => {
                     <p className="text-sm text-text-900">&copy; 2025 Urbn Herb. All rights reserved.</p>
                     <div className="mt-4">
                         <a href="https://www.instagram.com/urbn.herb/" className="text-text-900 hover:text-white mx-4">Instagram</a>
-                        <a href="https://facebook.com/Urbn_Herb" className="text-text-900 hover:text-white mx-4">Facebook</a>
                         <a href="https://x.com/Urbn_Herb" className="text-text-900 hover:text-white mx-4">Twitter</a>
                     </div>
                 </div>

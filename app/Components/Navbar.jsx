@@ -49,7 +49,7 @@ export default function Navbar() {
 
                 {/* Menu Links */}
                 <div id="Menu" className="flex items-center justify-end h-full">
-                    {["About", "Menu", "Contact"].map((item) => (
+                    {["References", "About", "Menu", "Contact"].map((item) => (
                         <Link
                             key={item}
                             href={`/${item}`}
