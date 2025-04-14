@@ -43,43 +43,6 @@ const About = () => {
             </div>
 
             <div className="w-full flex flex-col items-center justify-center space-y-16 py-10">
-                {/* Welcome Section */}
-                <section className="w-[90%] max-w-5xl text-center flex flex-col items-center px-6 py-10 bg-green-600 text-white rounded-2xl shadow-xl">
-                    <h2 className="text-4xl md:text-5xl font-bold">Welcome to Urban Herb</h2>
-                    <p className="text-lg md:text-xl mt-6 max-w-2xl">
-                        At Urban Herb, we bring fresh, locally grown produce straight to your table. Our commitment to quality and sustainability ensures you get the best ingredients to nourish your body and support a healthier planet.
-                    </p>
-                </section>
-
-                {/* Mission Section */}
-                <section className="w-[90%] max-w-5xl text-center flex flex-col justify-center items-center px-6 py-12 bg-green-400 text-gray-900 rounded-2xl shadow-xl">
-                    <h2 className="text-4xl md:text-5xl font-bold">Our Mission</h2>
-                    <p className="mt-6 text-lg md:text-xl max-w-2xl">
-                        We are dedicated to sustainable farming and building a stronger local food ecosystem. By supporting small-scale farmers, reducing food waste, and prioritizing organic growth methods, we help cultivate a future where fresh food is accessible to all.
-                    </p>
-                </section>
-
-                {/* Products Section */}
-                <section className="w-[90%] max-w-6xl px-6 bg-green-600 text-white rounded-2xl shadow-xl py-10">
-                    <h2 className="text-4xl md:text-5xl font-bold text-center mb-10">Featured Products</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {[
-                            { src: "/imgs/products/herbs.jpg", alt: "Fresh Herbs" },
-                            { src: "/imgs/products/vegetables.jpg", alt: "Organic Vegetables" },
-                            { src: "/imgs/products/specialty.jpg", alt: "Specialty Produce" }
-                        ].map((item, idx) => (
-                            <div key={idx} className="bg-white text-gray-900 p-4 rounded-2xl shadow-lg transition-transform hover:scale-105">
-                                <img
-                                    src={item.src}
-                                    alt={item.alt}
-                                    className="w-full h-60 object-cover rounded-xl"
-                                />
-                                <p className="mt-4 font-semibold text-lg">{item.alt}</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
                 {/* Testimonials */}
                 <section className="w-[90%] max-w-5xl text-center flex flex-col justify-center items-center px-6 py-12 bg-green-400 text-gray-900 rounded-2xl shadow-xl">
                     <h2 className="text-4xl md:text-5xl font-bold">What Our Customers Say</h2>
@@ -92,36 +55,6 @@ const About = () => {
                         </p>
                     </div>
                 </section>
-
-                {/* Sustainability */}
-                <section className="w-[90%] max-w-5xl text-center flex flex-col justify-center items-center px-6 py-12 bg-green-600 text-white rounded-2xl shadow-xl">
-                    <h2 className="text-4xl md:text-5xl font-bold">Our Commitment to Sustainability</h2>
-                    <p className="mt-6 text-lg md:text-xl max-w-2xl">
-                        We believe in farming that respects the environment. By using eco-friendly growing techniques, composting, and minimizing our carbon footprint, Urban Herb ensures that every product is both delicious and responsibly sourced.
-                    </p>
-                </section>
-            </div>
-
-
-            {/* Team Members */}
-            <div className="container mx-auto flex flex-col items-center my-16">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
-                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl">
-                        <img src="/team-member-1.jpg" alt="Portrait of Alice Johnson, Head Chef" className="w-full h-40 object-cover rounded-t-lg mb-4" />
-                        <h3 className="text-2xl font-semibold text-primary-500 mb-4">Alice Johnson</h3>
-                        <p className="text-text-600 text-lg">Head Chef</p>
-                    </div>
-                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl">
-                        <img src="/team-member-2.jpg" alt="Portrait of Bob Smith, Farm Manager" className="w-full h-40 object-cover rounded-t-lg mb-4" />
-                        <h3 className="text-2xl font-semibold text-primary-500 mb-4">Bob Smith</h3>
-                        <p className="text-text-600 text-lg">Farm Manager</p>
-                    </div>
-                    <div className="bg-secondary-50 p-8 rounded-xl shadow-xl md:col-span-2 lg:col-span-1">
-                        <img src="/team-member-3.jpg" alt="Portrait of Carla Lee, Sustainability Coordinator" className="w-full h-40 object-cover rounded-t-lg mb-4" />
-                        <h3 className="text-2xl font-semibold text-primary-500 mb-4">Carla Lee</h3>
-                        <p className="text-text-600 text-lg">Sustainability Coordinator</p>
-                    </div>
-                </div>
             </div>
 
             {/* Contact Section */}
