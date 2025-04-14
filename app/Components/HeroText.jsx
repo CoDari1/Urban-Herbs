@@ -5,13 +5,13 @@ export default function HeroText() {
         <div className="absolute inset-0 flex flex-col justify-center items-center text-text-900 text-center z-10">
             {/* Main Text */}
             <div className="text-5xl md:text-6xl font-bold space-y-2">
-                <div className="animate-fade-in-up ">Fresh.</div>
-                <div className="animate-fade-in-up delay-200 ">Local.</div>
-                <div className="animate-fade-in-up delay-400 ">Sustainable.</div>
+                <div className="animate-fade-in-up text-black ">Fresh.</div>
+                <div className="animate-fade-in-up delay-200 text-black">Local.</div>
+                <div className="animate-fade-in-up delay-400 text-black">Sustainable.</div>
             </div>
 
             {/* Mission Statement */}
-            <p className="mt-6 text-lg md:text-2xl font-medium animate-fade-in-up">
+            <p className="mt-6 text-lg md:text-2xl font-medium animate-fade-in-up text-white bg-black bg-opacity-[30%]">
                 Providing fresh produce to our community.
             </p>
 
