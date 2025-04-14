@@ -12,7 +12,8 @@ const dishes = [
             { "label": "6 Breadsticks", "calories": 266, "price": "$2.99" },
             { "label": "12 Breadsticks", "calories": 536, "price": "$5.99" }
         ],
-        "allergy": "This dish contains dairy, gluten, and garlic"
+        "allergy": "This dish contains dairy, gluten, and garlic",
+        "typeOf": "Appetizers"
     },
     {
         "title": "Ranch Deviled Eggs",
@@ -21,7 +22,8 @@ const dishes = [
             { "label": "6 Deviled eggs", "calories": 204, "price": "$4.99" },
             { "label": "12 Deviled eggs", "calories": 412, "price": "$6.99" }
         ],
-        "allergy": "This dish contains eggs, dairy, and gluten"
+        "allergy": "This dish contains eggs, dairy, and gluten",
+        "typeOf": "Appetizers"
     },
     {
         "title": "Vegan Mozzarella Sticks",
@@ -30,7 +32,8 @@ const dishes = [
             { "label": "6 Mozzarella sticks", "calories": 432, "price": "$7.99" },
             { "label": "12 Mozzarella sticks", "calories": 1046, "price": "$9.99" }
         ],
-        "allergy": "This dish contains dairy"
+        "allergy": "This dish contains dairy",
+        "typeOf": "Appetizers"
     },
     {
         "title": "Smoked Feta Dip",
@@ -39,7 +42,8 @@ const dishes = [
             { "label": "Family Serving", "calories": 897, "price": "$8.30" },
             { "label": "Individual Serving", "calories": 442, "price": "$6.45" }
         ],
-        "allergy": "This dish contains dairy"
+        "allergy": "This dish contains dairy", 
+        "typeOf": "Appetizer"
     },
     {
         "title": "Hurricane Chips",
@@ -48,7 +52,8 @@ const dishes = [
             { "label": "Family Serving", "calories": 437, "price": "$6.30" },
             { "label": "Individual Serving", "calories": 215, "price": "$4.45" }
         ],
-        "allergy": "This dish may contain gluten and oils"
+        "allergy": "This dish may contain gluten and oils",
+        "typeOf": "Appetizer"
     },
     {
         "title": "Broccoli Cheese Soup",
@@ -57,7 +62,8 @@ const dishes = [
             { "label": "Family Serving", "calories": 400, "price": "$2.50" },
             { "label": "Individual Serving", "calories": 290, "price": "$1.25" }
         ],
-        "allergy": "This dish contains dairy and broccoli"
+        "allergy": "This dish contains dairy and broccoli",
+        "typeOf": "Side Dish"
     },
     {
         "title": "Smashed Zucchini with Pesto Burrata",
@@ -66,7 +72,8 @@ const dishes = [
             { "label": "Family Serving", "calories": 1532, "price": "$5.30" },
             { "label": "Individual Serving", "calories": 473, "price": "$3.20" }
         ],
-        "allergy": "This dish contains dairy and zucchini"
+        "allergy": "This dish contains dairy and zucchini",
+        "typeOf": "Side Dish"
     },
     {
         "title": "Grilled Vegetables",
@@ -75,7 +82,8 @@ const dishes = [
             { "label": "5 Grilled Vegetables", "price": "$3.50" },
             { "label": "3 Grilled Vegetables", "price": "$2.25" }
         ],
-        "allergy": "This dish may contain various vegetables"
+        "allergy": "This dish may contain various vegetables",
+        "typeOf": "Side Dish"
     },
     {
         "title": "Classic Minestrone Soup",
@@ -84,7 +92,8 @@ const dishes = [
             { "label": "Family Serving", "calories": 415, "price": "$10.20" },
             { "label": "Individual Serving", "calories": 740, "price": "$2.25" }
         ],
-        "allergy": "This dish contains vegetables, legumes, and gluten"
+        "allergy": "This dish contains vegetables, legumes, and gluten",
+        "typeOf": "Side Dish"
     },
     {
         "title": "Basic Polenta",
@@ -93,7 +102,8 @@ const dishes = [
             { "label": "Family Serving", "calories": 600, "price": "$1.50" },
             { "label": "Individual Serving", "calories": 150, "price": "$0.50" }
         ],
-        "allergy": "This dish contains corn and dairy"
+        "allergy": "This dish contains corn and dairy",
+        "typeOf": "Side Dish"
     },
     {
         "title": "Veggie Pizza",
@@ -103,8 +113,50 @@ const dishes = [
             { "label": "Medium", "calories": 1145, "price": "17.99" },
             { "label": "Large", "calories": 1380, "price": "20.99" }
         ],
-        "allergy": "This dish contains gluten and dairy products"
-    }
+        "allergy": "This dish contains gluten and dairy products",
+        "typeOf": "Main Dish"
+    },
+    {
+        "title": "Arrabbiata",
+        "imageUrl": "/imgs/menu/Main dishes/Arrabbiata.jpg",
+        "options": [
+            {}, {}, 
+        ],
+        "typeOf": "Main Dish"
+    },
+    {
+        "title": "",
+        "imageUrl": "",
+        "options": [
+            {}, {}, 
+        ],
+        "typeOf": "Main Dish"
+    },
+    {
+        "title": "",
+        "imageUrl": "",
+        "options": [
+            {}, {}, 
+        ],
+        "typeOf": "Main Dish"
+    },
+    {
+        "title": "",
+        "imageUrl": "",
+        "options": [
+            {}, {}, 
+        ],
+        "typeOf": "Main Dish"
+    },
+    {
+        "title": "",
+        "imageUrl": "",
+        "options": [
+            {}, {}, 
+        ],
+        "typeOf": "Main Dish"
+    },
+    
 ];
 const Page = () => {
     return (
