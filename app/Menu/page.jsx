@@ -6,14 +6,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const dishes = [
     {
         "title": "Garlic Parmesan Breadsticks",
-        "imageUrl": "" +
-            "/imgs/menu/Appetizers/Breadsticks.jpg",
+        "imageUrl": "/imgs/menu/Appetizers/Breadsticks.jpg",
         "options": [
             { "label": "6 Breadsticks", "calories": 266, "price": "$2.99" },
             { "label": "12 Breadsticks", "calories": 536, "price": "$5.99" }
         ],
         "allergy": "This dish contains dairy, gluten, and garlic",
-        "typeOf": "Appetizers"
+        "typeOf": "Appetizer"
     },
     {
         "title": "Ranch Deviled Eggs",
@@ -23,7 +22,7 @@ const dishes = [
             { "label": "12 Deviled eggs", "calories": 412, "price": "$6.99" }
         ],
         "allergy": "This dish contains eggs, dairy, and gluten",
-        "typeOf": "Appetizers"
+        "typeOf": "Appetizer"
     },
     {
         "title": "Vegan Mozzarella Sticks",
@@ -33,7 +32,7 @@ const dishes = [
             { "label": "12 Mozzarella sticks", "calories": 1046, "price": "$9.99" }
         ],
         "allergy": "This dish contains dairy",
-        "typeOf": "Appetizers"
+        "typeOf": "Appetizer"
     },
     {
         "title": "Smoked Feta Dip",
@@ -42,7 +41,7 @@ const dishes = [
             { "label": "Family Serving", "calories": 897, "price": "$8.30" },
             { "label": "Individual Serving", "calories": 442, "price": "$6.45" }
         ],
-        "allergy": "This dish contains dairy", 
+        "allergy": "This dish contains dairy",
         "typeOf": "Appetizer"
     },
     {
@@ -67,7 +66,7 @@ const dishes = [
     },
     {
         "title": "Smashed Zucchini with Pesto Burrata",
-        "imageUrl": "https://www.eatingwell.com/recipe/7994048/smashed-zucchini-with-pesto-burrata/",
+        "imageUrl": "/imgs/menu/Side Dishes/Zucchini.jpg",
         "options": [
             { "label": "Family Serving", "calories": 1532, "price": "$5.30" },
             { "label": "Individual Serving", "calories": 473, "price": "$3.20" }
@@ -77,7 +76,7 @@ const dishes = [
     },
     {
         "title": "Grilled Vegetables",
-        "imageUrl": "https://www.loveandlemons.com/grilled-vegetables/",
+        "imageUrl": "/imgs/menu/Side Dishes/GrilledVegetables.jpg",
         "options": [
             { "label": "5 Grilled Vegetables", "price": "$3.50" },
             { "label": "3 Grilled Vegetables", "price": "$2.25" }
@@ -87,7 +86,7 @@ const dishes = [
     },
     {
         "title": "Classic Minestrone Soup",
-        "imageUrl": "https://www.eatingbirdfood.com/classic-minestrone-soup/",
+        "imageUrl": "/imgs/menu/Side Dishes/MinestroneSoup.jpeg",
         "options": [
             { "label": "Family Serving", "calories": 415, "price": "$10.20" },
             { "label": "Individual Serving", "calories": 740, "price": "$2.25" }
@@ -97,7 +96,7 @@ const dishes = [
     },
     {
         "title": "Basic Polenta",
-        "imageUrl": "https://cooking.nytimes.com/recipes/1014527-basic-polenta",
+        "imageUrl": "/imgs/menu/Side Dishes/Polenta.jpg",
         "options": [
             { "label": "Family Serving", "calories": 600, "price": "$1.50" },
             { "label": "Individual Serving", "calories": 150, "price": "$0.50" }
@@ -106,100 +105,137 @@ const dishes = [
         "typeOf": "Side Dish"
     },
     {
-        "title": "Veggie Pizza",
+        "title": "Margherita Pizza",
         "imageUrl": "/imgs/menu/Main dishes/VeggiePizza.jpg",
         "options": [
-            { "label": "Small", "calories": 960, "price": "13.99" },
-            { "label": "Medium", "calories": 1145, "price": "17.99" },
-            { "label": "Large", "calories": 1380, "price": "20.99" }
+            { "size": "Large", "calories": 1380, "price": 19.15 },
+            { "size": "Medium", "calories": 1145, "price": 17.35 },
+            { "size": "Small", "calories": 960, "price": 14.45 }
         ],
-        "allergy": "This dish contains gluten and dairy products",
-        "typeOf": "Main Dish"
+        "typeOf": "Main Dish",
+        "allergy": "This dish contains gluten and dairy products"
+    },
+    {
+        "title": "Eggplant Parmesan",
+        "imageUrl": "/imgs/menu/Main dishes/EggplantParmesan.jpg",
+        "options": [
+            { "size": "Normal", "calories": 660, "price": 11.15 },
+            { "size": "Kid’s meal", "calories": 335, "price": 8.55 }
+        ],
+        "typeOf": "Main Dish",
+        "allergy": "This dish contains eggplant and dairy products"
+    },
+    {
+        "title": "One Pot Pasta",
+        "imageUrl": "/imgs/menu/Main dishes/OnePotPasta.jpg",
+        "options": [
+            { "size": "Large", "calories": 820, "price": 12.99 },
+            { "size": "Medium", "calories": 465, "price": 10.25 },
+            { "size": "Small", "calories": 280, "price": 7.50 }
+        ],
+        "typeOf": "Main Dish",
+        "allergy": "This dish contains gluten, dairy, and various vegetables"
+    },
+    {
+        "title": "Caprese Salad",
+        "imageUrl": "/imgs/menu/Main dishes/CapresseSalad.jpg",
+        "options": [
+            { "size": "Large", "calories": 345, "price": 13.00 },
+            { "size": "Medium", "calories": 250, "price": 11.15 },
+            { "size": "Small", "calories": 201, "price": 9.50 }
+        ],
+        "typeOf": "Main Dish",
+        "allergy": "This dish contains dairy, tomatoes, basil, and olive oil"
     },
     {
         "title": "Arrabbiata",
         "imageUrl": "/imgs/menu/Main dishes/Arrabbiata.jpg",
         "options": [
-            {}, {}, 
+            { "size": "Large", "calories": 451, "price": 12.99 },
+            { "size": "Medium", "calories": 307, "price": 10.25 },
+            { "size": "Small", "calories": 243, "price": 7.50 }
         ],
-        "typeOf": "Main Dish"
-    },
-    {
-        "title": "",
-        "imageUrl": "",
-        "options": [
-            {}, {}, 
-        ],
-        "typeOf": "Main Dish"
-    },
-    {
-        "title": "",
-        "imageUrl": "",
-        "options": [
-            {}, {}, 
-        ],
-        "typeOf": "Main Dish"
-    },
-    {
-        "title": "",
-        "imageUrl": "",
-        "options": [
-            {}, {}, 
-        ],
-        "typeOf": "Main Dish"
-    },
-    {
-        "title": "",
-        "imageUrl": "",
-        "options": [
-            {}, {}, 
-        ],
-        "typeOf": "Main Dish"
-    },
-    
+        "typeOf": "Main Dish",
+        "allergy": "This dish contains dairy, gluten, tomatoes, and various spices"
+    }
+
 ];
+
+const groupedTypes = ["Appetizer", "Side Dish", "Main Dish"];
+
 const Page = () => {
     return (
+        <div className="flex flex-col items-center justify-start min-h-screen py-2 overflow-hidden">
+            {groupedTypes.map((type) => {
+                const filteredDishes = dishes.filter(dish => dish.typeOf === type);
+                if (filteredDishes.length === 0) return null;
 
-        console.log(dishes.imageUrl),
-        <div className="flex flex-col items-center">
-            {/* Hero Section */}
-            <div className="h-[600px] w-full flex rounded-3xl bg-gradient-to-r from-red-500 to-orange-500 mt-[120px] justify-center items-center shadow-xl">
-                <h1 className="text-4xl text-white font-bold">Menu Selection</h1>
-            </div>
+                const firstRow = filteredDishes.slice(0, 3);
+                const secondRow = filteredDishes.slice(3, 5);
 
-            {/* Card Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 p-6">
-                {dishes.slice(0, 15).map((dish, index) => (
-                    <Card key={index} className="bg-primary-600 shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-                        <CardHeader className="p-4 bg-primary-700 rounded-t-xl">
-                            <CardTitle className="text-xl font-semibold text-white">{dish.title}</CardTitle>
-                            <CardDescription className="text-sm text-white opacity-80">{dish.allergy}</CardDescription>
-                        </CardHeader>
-                        <CardContent className="py-4 space-y-4 flex flex-col items-center">
-                            <img
-                                src={dish.imageUrl}
-                                alt={dish.title}
-                                className="w-full h-40 object-cover rounded-lg shadow-md"
-                            />
-                            <div className="text-white text-sm space-y-2 w-full text-center">
-                                {dish.options.map((opt, optIndex) => (
-                                    <p key={optIndex}>
-                                        {opt.label}: <span className="font-semibold">
-                                            {opt.calories ? `${opt.calories} kcal` : ''} {opt.price}
-                                        </span>
-                                    </p>
+                return (
+                    <div key={type} className="w-full mt-16">
+                        <h2 className="text-4xl font-bold text-primary-700 mb-8 text-center">
+                            {type.endsWith("s") ? type : `${type}s`}
+                        </h2>
+                        <div className="flex flex-col space-y-8">
+                            {/* First row */}
+                            <div className="flex justify-center gap-8">
+                                {firstRow.map((dish, index) => (
+                                    <Card key={index} className="bg-primary-600 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-96">
+                                        <CardHeader className="p-5 bg-primary-700 rounded-t-xl">
+                                            <CardTitle className="text-2xl font-bold text-white text-center">{dish.title}</CardTitle>
+                                            <CardDescription className="text-sm text-white opacity-80 text-center">{dish.allergy}</CardDescription>
+                                        </CardHeader>
+                                        <CardContent className="p-6 flex flex-col items-center">
+                                            <div className="flex justify-center w-full">
+                                                <img src={dish.imageUrl} alt={dish.title} className="w-full h-48 object-cover rounded-lg shadow-md" />
+                                            </div>
+                                            <div className="text-white text-sm space-y-3 w-full text-center mt-4">
+                                                {dish.options.map((opt, optIndex) => (
+                                                    <p key={optIndex} className="font-semibold">
+                                                        {opt.label || opt.size} –{' '}
+                                                        {opt.calories && <span>{opt.calories} kcal</span>}
+                                                        {opt.calories && opt.price && <span> • </span>}
+                                                        {opt.price && <span>{opt.price}</span>}
+                                                    </p>
+                                                ))}
+                                            </div>
+                                        </CardContent>
+                                    </Card>
                                 ))}
                             </div>
-                        </CardContent>
-                        <CardFooter className="p-4 bg-primary-700 rounded-b-xl">
-                            <button className="w-full py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-200">
-                                Add to Cart
-                            </button>
-                        </CardFooter>
-                    </Card>
-                ))}
-            </div>
+
+                            {/* Second row */}
+                            <div className="flex justify-center gap-8">
+                                {secondRow.map((dish, index) => (
+                                    <Card key={index} className="bg-primary-600 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-96">
+                                        <CardHeader className="p-5 bg-primary-700 rounded-t-xl">
+                                            <CardTitle className="text-2xl font-bold text-white text-center">{dish.title}</CardTitle>
+                                            <CardDescription className="text-sm text-white opacity-80 text-center">{dish.allergy}</CardDescription>
+                                        </CardHeader>
+                                        <CardContent className="p-6 flex flex-col items-center">
+                                            <div className="flex justify-center w-full">
+                                                <img src={dish.imageUrl} alt={dish.title} className="w-full h-48 object-cover rounded-lg shadow-md" />
+                                            </div>
+                                            <div className="text-white text-sm space-y-3 w-full text-center mt-4">
+                                                {dish.options.map((opt, optIndex) => (
+                                                    <p key={optIndex} className="font-semibold">
+                                                        {opt.label || opt.size} –{' '}
+                                                        {opt.calories && <span>{opt.calories} kcal</span>}
+                                                        {opt.calories && opt.price && <span> • </span>}
+                                                        {opt.price && <span>{opt.price}</span>}
+                                                    </p>
+                                                ))}
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     );
 };
