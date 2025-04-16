@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -17,13 +18,20 @@ const ContactPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const res = await fetch('/api/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData),
-        });
+        try {
+            const result = await emailjs.send(
+                'service_ta69j9k',  
+                'template_x9xjxpb',  
+                formData,            // Must match EmailJS template variables
+                't0xyxfHSaLLB68L1u'  
+            );
 
-        alert(res.ok ? "Message sent!" : "Failed to send message.");
+            console.log(result.text);
+            alert("Message sent!");
+        } catch (error) {
+            console.error(error);
+            alert("Failed to send message.");
+        }
     };
 
     return (
