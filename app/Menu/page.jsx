@@ -165,79 +165,79 @@ const groupedTypes = ["Appetizer", "Side Dish", "Main Dish"];
 
 const Page = () => {
     return (
-        <div className="flex flex-col items-center justify-start min-h-screen py-2 overflow-hidden">
-            {groupedTypes.map((type) => {
-                const filteredDishes = dishes.filter(dish => dish.typeOf === type);
-                if (filteredDishes.length === 0) return null;
-
-                const firstRow = filteredDishes.slice(0, 3);
-                const secondRow = filteredDishes.slice(3, 5);
-
-                return (
-                    <div key={type} className="w-full mt-16">
-                        <h2 className="text-4xl font-bold text-primary-700 mb-8 text-center">
-                            {type.endsWith("s") ? type : `${type}s`}
-                        </h2>
-                        <div className="flex flex-col space-y-8">
-                            {/* First row */}
-                            <div className="flex justify-center gap-8">
-                                {firstRow.map((dish, index) => (
-                                    <Card key={index} className="bg-primary-600 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-96">
-                                        <CardHeader className="p-5 bg-primary-700 rounded-t-xl">
-                                            <CardTitle className="text-2xl font-bold text-white text-center">{dish.title}</CardTitle>
-                                            <CardDescription className="text-sm text-white opacity-80 text-center">{dish.allergy}</CardDescription>
-                                        </CardHeader>
-                                        <CardContent className="p-6 flex flex-col items-center">
-                                            <div className="flex justify-center w-full">
-                                                <img src={dish.imageUrl} alt={dish.title} className="w-full h-48 object-cover rounded-lg shadow-md" />
-                                            </div>
-                                            <div className="text-white text-sm space-y-3 w-full text-center mt-4">
-                                                {dish.options.map((opt, optIndex) => (
-                                                    <p key={optIndex} className="font-semibold">
-                                                        {opt.label || opt.size} –{' '}
-                                                        {opt.calories && <span>{opt.calories} kcal</span>}
-                                                        {opt.calories && opt.price && <span> • </span>}
-                                                        {opt.price && <span>{opt.price}</span>}
-                                                    </p>
-                                                ))}
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                ))}
-                            </div>
-
-                            {/* Second row */}
-                            <div className="flex justify-center gap-8">
-                                {secondRow.map((dish, index) => (
-                                    <Card key={index} className="bg-primary-600 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-96">
-                                        <CardHeader className="p-5 bg-primary-700 rounded-t-xl">
-                                            <CardTitle className="text-2xl font-bold text-white text-center">{dish.title}</CardTitle>
-                                            <CardDescription className="text-sm text-white opacity-80 text-center">{dish.allergy}</CardDescription>
-                                        </CardHeader>
-                                        <CardContent className="p-6 flex flex-col items-center">
-                                            <div className="flex justify-center w-full">
-                                                <img src={dish.imageUrl} alt={dish.title} className="w-full h-48 object-cover rounded-lg shadow-md" />
-                                            </div>
-                                            <div className="text-white text-sm space-y-3 w-full text-center mt-4">
-                                                {dish.options.map((opt, optIndex) => (
-                                                    <p key={optIndex} className="font-semibold">
-                                                        {opt.label || opt.size} –{' '}
-                                                        {opt.calories && <span>{opt.calories} kcal</span>}
-                                                        {opt.calories && opt.price && <span> • </span>}
-                                                        {opt.price && <span>{opt.price}</span>}
-                                                    </p>
-                                                ))}
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                ))}
-                            </div>
+        <div className="flex flex-col items-center justify-start min-h-screen py-4 px-2 sm:px-4">
+        {groupedTypes.map((type) => {
+            const filteredDishes = dishes.filter(dish => dish.typeOf === type);
+            if (filteredDishes.length === 0) return null;
+    
+            const firstRow = filteredDishes.slice(0, 3);
+            const secondRow = filteredDishes.slice(3, 5);
+    
+            return (
+                <div key={type} className="w-full mt-16">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-primary-700 mb-8 text-center">
+                        {type.endsWith("s") ? type : `${type}s`}
+                    </h2>
+    
+                    <div className="flex flex-col space-y-8">
+                        {/* First Row */}
+                        <div className="flex flex-wrap justify-center gap-6">
+                            {firstRow.map((dish, index) => (
+                                <Card key={index} className="bg-primary-600 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full max-w-sm">
+                                    <CardHeader className="p-5 bg-primary-700 rounded-t-xl">
+                                        <CardTitle className="text-2xl font-bold text-white text-center">{dish.title}</CardTitle>
+                                        <CardDescription className="text-sm text-white opacity-80 text-center">{dish.allergy}</CardDescription>
+                                    </CardHeader>
+                                    <CardContent className="p-6 flex flex-col items-center">
+                                        <div className="flex justify-center w-full">
+                                            <img src={dish.imageUrl} alt={dish.title} className="w-full h-48 object-cover rounded-lg shadow-md" />
+                                        </div>
+                                        <div className="text-white text-sm space-y-3 w-full text-center mt-4">
+                                            {dish.options.map((opt, optIndex) => (
+                                                <p key={optIndex} className="font-semibold">
+                                                    {opt.label || opt.size} –{' '}
+                                                    {opt.calories && <span>{opt.calories} kcal</span>}
+                                                    {opt.calories && opt.price && <span> • </span>}
+                                                    {opt.price && <span>{opt.price}</span>}
+                                                </p>
+                                            ))}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            ))}
+                        </div>
+    
+                        {/* Second Row */}
+                        <div className="flex flex-wrap justify-center gap-6">
+                            {secondRow.map((dish, index) => (
+                                <Card key={index} className="bg-primary-600 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full max-w-sm">
+                                    <CardHeader className="p-5 bg-primary-700 rounded-t-xl">
+                                        <CardTitle className="text-2xl font-bold text-white text-center">{dish.title}</CardTitle>
+                                        <CardDescription className="text-sm text-white opacity-80 text-center">{dish.allergy}</CardDescription>
+                                    </CardHeader>
+                                    <CardContent className="p-6 flex flex-col items-center">
+                                        <div className="flex justify-center w-full">
+                                            <img src={dish.imageUrl} alt={dish.title} className="w-full h-48 object-cover rounded-lg shadow-md" />
+                                        </div>
+                                        <div className="text-white text-sm space-y-3 w-full text-center mt-4">
+                                            {dish.options.map((opt, optIndex) => (
+                                                <p key={optIndex} className="font-semibold">
+                                                    {opt.label || opt.size} –{' '}
+                                                    {opt.calories && <span>{opt.calories} kcal</span>}
+                                                    {opt.calories && opt.price && <span> • </span>}
+                                                    {opt.price && <span>{opt.price}</span>}
+                                                </p>
+                                            ))}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            ))}
                         </div>
                     </div>
-                );
-            })}
-        </div>
-    );
-};
+                </div>
+            );
+        })}
+    </div>
+    )}
 
-export default Page;
+    export default Page;
