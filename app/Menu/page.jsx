@@ -172,11 +172,11 @@ const Page = () => {
     
             const firstRow = filteredDishes.slice(0, 3);
             const secondRow = filteredDishes.slice(3, 5);
-    
+
             return (
                 <div key={type} className="w-full mt-16">
                     <h2 className="text-3xl sm:text-4xl font-bold text-primary-700 mb-8 text-center">
-                        {type.endsWith("s") ? type : `${type}s`}
+                        {type === "Appetizer" ? "Appetizers" : `${type}es`}
                     </h2>
     
                     <div className="flex flex-col space-y-8">

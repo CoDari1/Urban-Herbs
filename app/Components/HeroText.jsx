@@ -5,9 +5,9 @@ export default function HeroText() {
         <div className="absolute inset-0 flex flex-col justify-center items-center text-text-900 text-center z-10">
             {/* Main Text */}
             <div className="text-5xl md:text-6xl font-bold space-y-2">
-                <div className="animate-fade-in-up text-black ">Fresh.</div>
-                <div className="animate-fade-in-up delay-200 text-black">Local.</div>
-                <div className="animate-fade-in-up delay-400 text-black">Sustainable.</div>
+                <div className="animate-fade-in-up text-text-300">Fresh.</div>
+                <div className="animate-fade-in-up delay-200 text-text-300">Local.</div>
+                <div className="animate-fade-in-up delay-400 text-text-300++">Sustainable.</div>
             </div>
 
             {/* Mission Statement */}
