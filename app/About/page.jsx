@@ -43,7 +43,7 @@ const About = () => {
             </div>
 
             <div className="w-full flex flex-col items-center justify-center space-y-16 py-10">
-                {/* Testimonials */}
+                {/* Testimonials Section */}
                 <section className="w-[90%] max-w-5xl text-center flex flex-col justify-center items-center px-6 py-12 bg-green-400 text-gray-900 rounded-2xl shadow-xl">
                     <h2 className="text-4xl md:text-5xl font-bold">What Our Customers Say</h2>
                     <div className="mt-8 space-y-6">
@@ -70,7 +70,7 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Footer */}
+            {/* Footer Section */}
             <footer className="bg-primary-500 text-white py-8">
                 <div className="container mx-auto text-center px-6">
                     <p className="text-sm text-text-900">&copy; 2025 Urbn Herb. All rights reserved.</p>
