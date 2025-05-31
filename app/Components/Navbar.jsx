@@ -49,7 +49,7 @@ export default function Navbar() {
 
                 {/* Menu Links */}
                 <div id="Menu" className="flex items-center justify-end h-full">
-                    {["Refs", "About", "Menu", "Contact"].map((item) => (
+                    {["References", "About", "Menu", "Contact"].map((item) => (
                         <Link
                             key={item}
                             href={`/${item}`}
@@ -57,9 +57,15 @@ export default function Navbar() {
                                 item === "Contact"
                                     ? "border-2 border-accent-500 hover:bg-primary-700"
                                     : "hover:bg-primary-600"
-                            }`}
-                        >
-                            {item}
+                            }`}>
+                            {item === "References" ? (
+                                <>
+                                    <span className="block md:hidden">Refs</span>
+                                    <span className="hidden md:block">References</span>
+                                </>
+                            ) : (
+                                item
+                            )}
                         </Link>
                     ))}
                 </div>
